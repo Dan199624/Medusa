@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cheat">
+      <UniqueIdentifier>{c07866a4-6a24-4b41-9a7d-ea1366f73a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{9a44f3dc-d859-4a99-a168-89ef8617c424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hooking">
+      <UniqueIdentifier>{69338d3d-4fd6-487d-b5c9-45af7bdd418d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\hooking\minhook">
+      <UniqueIdentifier>{94fa3641-67a9-425e-86e6-d1556a13ebc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\memory">
+      <UniqueIdentifier>{cdc2d990-eb14-4f63-af25-ace516fa4656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\patterns">
+      <UniqueIdentifier>{adb37e7b-b8ec-46bd-8b4b-56d8c26a2cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\hooks">
+      <UniqueIdentifier>{aa978f3d-fa0c-49c8-8eef-051667f5bf00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\menu">
+      <UniqueIdentifier>{b777da40-f01f-468d-a50d-e8b8a893d9c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rage">
+      <UniqueIdentifier>{120f3c3c-117a-47e3-ad2c-704b52434890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rage\natives">
+      <UniqueIdentifier>{601e4f17-a955-4a02-a737-fecbbfef5a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rage\invoker">
+      <UniqueIdentifier>{5ecfcde9-be7b-4ca9-a2c3-e7c926de0d9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rage\vector">
+      <UniqueIdentifier>{918de11d-e3d6-4501-9323-c57ed2fddf52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\menu\options">
+      <UniqueIdentifier>{aae47ceb-b909-48ff-81d1-ee1f011ee50d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\menu\util">
+      <UniqueIdentifier>{e99d8426-2c7d-4ab1-819c-9ae6167e7060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\menu\util\enums">
+      <UniqueIdentifier>{21d34c0d-987c-47ef-bc26-5bd49552d6b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\functions">
+      <UniqueIdentifier>{f5c16d8d-814d-40bc-92f6-5af88a7f5afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cheat\functions\player">
+      <UniqueIdentifier>{86f36112-caa7-4239-8a93-6f88cd74f8a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="log.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="range.cpp">
+      <Filter>util\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="pattern.cpp">
+      <Filter>util\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="module.cpp">
+      <Filter>util\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="batch.cpp">
+      <Filter>util\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="patterns.cpp">
+      <Filter>cheat\patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="detour.cpp">
+      <Filter>util\hooking</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>cheat\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="fiber.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="invoker.cpp">
+      <Filter>rage\invoker</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>cheat\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>cheat\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_helper.cpp">
+      <Filter>cheat\menu\util</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="functions.cpp">
+      <Filter>cheat\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>cheat\functions\player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="log.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook.h">
+      <Filter>util\hooking\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="all.h">
+      <Filter>util\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="ptr.h">
+      <Filter>util\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="range.h">
+      <Filter>util\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="fwddec.h">
+      <Filter>util\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern.h">
+      <Filter>util\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="module.h">
+      <Filter>util\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="batch.h">
+      <Filter>util\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="patterns.h">
+      <Filter>cheat\patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="detour.h">
+      <Filter>util\hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.h">
+      <Filter>cheat\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="fiber.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="crossmap.h">
+      <Filter>rage</Filter>
+    </ClInclude>
+    <ClInclude Include="native_handler.h">
+      <Filter>rage\natives</Filter>
+    </ClInclude>
+    <ClInclude Include="native_types.h">
+      <Filter>rage\natives</Filter>
+    </ClInclude>
+    <ClInclude Include="scrVector.h">
+      <Filter>rage\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>rage\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="natives.h">
+      <Filter>rage\natives</Filter>
+    </ClInclude>
+    <ClInclude Include="invoker.h">
+      <Filter>rage\invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>cheat\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="option.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_option.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="option_flag.h">
+      <Filter>cheat\menu\util\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="option_action.h">
+      <Filter>cheat\menu\util\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="submenu.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract_submenu.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="submenu_option.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="sub.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>cheat\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="fonts.h">
+      <Filter>cheat\menu\util\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_helper.h">
+      <Filter>cheat\menu\util</Filter>
+    </ClInclude>
+    <ClInclude Include="justify.h">
+      <Filter>cheat\menu\util\enums</Filter>
+    </ClInclude>
+    <ClInclude Include="joaat.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="simple_option.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>cheat\menu\util</Filter>
+    </ClInclude>
+    <ClInclude Include="toggle_option.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="number_option.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="char_mem_stream.h">
+      <Filter>cheat\menu\util</Filter>
+    </ClInclude>
+    <ClInclude Include="scroll_option.h">
+      <Filter>cheat\menu\options</Filter>
+    </ClInclude>
+    <ClInclude Include="functions.h">
+      <Filter>cheat\functions</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>cheat\functions\player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="minhook.lib">
+      <Filter>util\hooking\minhook</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="invoker_asm.asm">
+      <Filter>rage\natives</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
